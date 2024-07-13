@@ -1,4 +1,4 @@
-:host() {
+:host {
     display: flex;
     width: clamp(350px, 35%, 600px);
     aspect-ratio: 1.7;
@@ -18,7 +18,7 @@
     transform: translate(0, 0);
 }
 
-:host():hover .eventImage {
+:host:hover .eventImage {
     transform: translate(-10%, -2%);
     box-shadow: 16px 20px 30px -3px var(--background);
 }

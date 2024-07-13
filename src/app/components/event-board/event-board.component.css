@@ -1,4 +1,4 @@
-:host() {
+:host {
     display: block;
     height: 500px;
     width: 100%;
@@ -10,18 +10,30 @@
     -ms-overflow-style: none;
 }
 
+.fancyContainer {
+    width: 35vw;
+    height: 5rem;
+    background-color: var(--accent2);
+    clip-path: polygon(0% 1%, 90% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+    position: absolute;
+}
+
 .eventCategory {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--background);
+    color: var(--accent2);
     margin-bottom: 1.5rem;
     padding: 1rem;
-    padding-left: 2rem;
-    position: fixed;
-    width: 35%;
-    background: linear-gradient(90deg, var(--accent) 20%, var(--background) 80%);
-    border-radius: 3rem 0 0 6rem;
-    animation: slide 0.5s;
+    padding-left: 4rem;
+    position: absolute;
+    width: 34.5vw;
+    clip-path: polygon(0% 1%, 90% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 60%);
+    background-color: var(--background);
+    z-index: 1;
 }
 
 .eventBoard {
@@ -32,12 +44,4 @@
     height: 80%;
     white-space: nowrap;
     padding-right: 2rem;
-}
-
-@keyframes slide {
-    0% {
-        width: 0;
-    } 100% {
-        width: 35%;
-    }
 }
