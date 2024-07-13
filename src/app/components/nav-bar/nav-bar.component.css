@@ -1,0 +1,101 @@
+:host() {
+    display: flex;
+    background-color: var(--surface);
+    color: var(--text);
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: fit-content;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.logoImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--accent);
+}
+
+.logoText {
+    font-size: 1.5rem;
+}
+
+.navBar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    height: 100%;
+}
+
+.navLink {
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: fit-content;
+    padding: 0.5rem;
+    transition: all 0.3s;
+    color: var(--text);
+}
+
+.navLink::before {
+    content: '';
+    display: block;
+    height: 2px;
+    position: relative;
+    top: 1.7rem;
+    width: 0;
+    background-color: var(--accent);
+    transition: all 0.3s;
+}
+
+.navLink:visited {
+    color: var(--accent2);
+}
+
+.navLink:hover {
+    color: var(--accent);
+}
+
+.navLink:hover::before {
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    height: 100%;
+}
+
+.profileImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--accent);
+}
+
+.profileImage:hover {
+    border: 2px solid var(--accent2);
+}

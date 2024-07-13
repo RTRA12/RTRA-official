@@ -1,0 +1,43 @@
+:host() {
+    display: block;
+    height: 500px;
+    width: 100%;
+    padding: 2rem;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.eventCategory {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--background);
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    position: fixed;
+    width: 35%;
+    background: linear-gradient(90deg, var(--accent) 20%, var(--background) 80%);
+    border-radius: 3rem 0 0 6rem;
+    animation: slide 0.5s;
+}
+
+.eventBoard {
+    display: flex;
+    margin-top: 6rem;
+    gap: 2rem;
+    transition: all 0.3s;
+    height: 80%;
+    white-space: nowrap;
+    padding-right: 2rem;
+}
+
+@keyframes slide {
+    0% {
+        width: 0;
+    } 100% {
+        width: 35%;
+    }
+}
