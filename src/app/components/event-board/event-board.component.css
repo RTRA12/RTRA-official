@@ -11,7 +11,7 @@
 }
 
 .fancyContainer {
-    width: 35vw;
+    width: 23vw;
     height: 5rem;
     background-color: var(--accent2);
     clip-path: polygon(0% 1%, 90% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 60%);
@@ -28,9 +28,8 @@
     color: var(--accent2);
     margin-bottom: 1.5rem;
     padding: 1rem;
-    padding-left: 4rem;
     position: absolute;
-    width: 34.5vw;
+    width: 22.5vw;
     clip-path: polygon(0% 1%, 90% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 60%);
     background-color: var(--background);
     z-index: 1;
