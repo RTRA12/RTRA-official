@@ -90,3 +90,7 @@
     background-color: var(--secondary);
     color: var(--accent);
 }
+
+.eventButton:active {
+    transform: scale(0.95);
+}
