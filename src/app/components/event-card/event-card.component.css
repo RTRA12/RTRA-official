@@ -18,11 +18,6 @@
     transform: translate(0, 0);
 }
 
-:host:hover .eventImage {
-    transform: translate(-10%, -2%);
-    box-shadow: 16px 20px 30px -3px var(--background);
-}
-
 .eventDetails {
     display: flex;
     flex-direction: column;

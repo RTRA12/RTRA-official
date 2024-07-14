@@ -13,6 +13,7 @@
 .fancyContainer {
     width: 23vw;
     height: 5rem;
+    margin-left: 2.5%;
     background-color: var(--accent2);
     clip-path: polygon(0% 1%, 90% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 60%);
     display: flex;
@@ -43,4 +44,5 @@
     height: 80%;
     white-space: nowrap;
     padding-right: 2rem;
+    margin-left: 2.5%;
 }
