@@ -30,7 +30,6 @@
     transition: all 0.3s;
     height: clamp(300px, 80vh, 600px);
     white-space: nowrap;
-    padding-right: 2rem;
     margin-left: 10%;
     width: 100vw;
 }

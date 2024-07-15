@@ -22,6 +22,6 @@ export class EventBoardComponent {
     @Input() events!: CustomEvent[];
     @Input() category!: string;
     ngOnInit() {
-        // this.document.nativeElement.querySelector('.eventBoard').style.width = `calc(${this.events.length * 600 + 'px'} + 3rem)`;
+        this.document.nativeElement.querySelector('.eventBoard').style.width = `calc(${this.events.length * 500 + 'px'} + 3rem)`;
     }
 }
