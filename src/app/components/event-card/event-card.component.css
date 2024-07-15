@@ -1,96 +1,130 @@
 :host {
     display: flex;
-    width: clamp(350px, 35%, 600px);
-    aspect-ratio: 1.7;
-    padding: 1rem;
-    justify-content: space-between;
-    background-color: var(--secondary);
-    border-radius: 30px;
-    border: 1px solid var(--accent);
-    transition: all 0.3s ease-in-out;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--accent);
+    aspect-ratio: 0.8;
+    gap: 1rem;
+    position: relative;
 }
 
 .eventImage {
-    width: 45%;
-    aspect-ratio: 1;
+    height: 100%;
+    aspect-ratio: 0.8;
     object-fit: cover;
-    transition: all 0.3s ease-in-out;
-    transform: translate(0, 0);
 }
 
 .eventDetails {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top,
+    var(--primary) 0%,
+    transparent 120%);
     transition: all 0.3s;
-    width: 55%;
-    padding: 0 2rem;
+}
+
+.eventTop {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
 }
 
 .eventDate {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--accent2);
-    width: 100%;
-    text-wrap: wrap;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--background);
+    margin-left: auto;
+    backdrop-filter: blur(15px);
+    padding: 0.5rem;
+    border: 2px solid var(--background);
+    transition: all 0.3s;
+}
+
+.eventTag {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--background);
+    border: 2px solid var(--background);
+    padding: 0.5rem;
+    background-color: var(--accent2);
+    width: fit-content;
 }
 
 .eventTitle {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    font-weight: 600;
-    color: var(--accent);
-    width: 100%;
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(to right, var(--accent2), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px var(--background);
+    margin-top: auto;
     text-wrap: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .eventDescription {
     font-size: 1rem;
-    margin-top: 1rem;
-    font-weight: 400;
-    color: var(--subtext);
+    color: var(--text);
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100%;
+    width: 80%;
     text-wrap: wrap;
+    height: 4rem;
+}
+
+.eventBottom {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+    justify-content: space-between;
 }
 
 .eventLocation {
-    font-size: 1rem;
-    margin-top: 1rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: bold;
     color: var(--accent);
-    margin-top: auto;
-    margin-left: auto;
-    width: 100%;
-    text-wrap: wrap;
+}
+
+.eventTimings {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--accent2);
 }
 
 .eventButton {
-    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--accent);
     padding: 0.5rem 1rem;
-    background-color: var(--accent);
-    color: var(--secondary);
-    outline: none;
+    background-color: var(--background);
     border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
-    border: 2px solid var(--accent);
-    margin-left: auto;
 }
 
 .eventButton:hover {
-    background-color: var(--secondary);
-    color: var(--accent);
+    background-color: var(--accent);
+    color: var(--background);
 }
 
 .eventButton:active {
     transform: scale(0.95);
 }
+
+:host:hover .eventDetails {
+    backdrop-filter: blur(2px);
+}
+

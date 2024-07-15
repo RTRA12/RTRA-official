@@ -1,6 +1,6 @@
 :host {
     display: block;
-    height: 500px;
+    height: 100%;
     width: 100%;
     padding: 2rem;
     white-space: nowrap;
@@ -10,30 +10,17 @@
     -ms-overflow-style: none;
 }
 
-.fancyContainer {
-    width: 23vw;
-    height: 5rem;
-    margin-left: 2.5%;
-    background-color: var(--accent2);
-    clip-path: polygon(0% 1%, 90% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 60%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1.5rem;
-    position: absolute;
-}
-
 .eventCategory {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--accent2);
+    /* background-color: var(--accent2); */
+    background: linear-gradient(160deg, var(--accent) 0%, var(--accent2) 100%);
+    color: var(--background);
     margin-bottom: 1.5rem;
-    padding: 1rem;
+    padding: 0.5rem 2rem;
     position: absolute;
-    width: 22.5vw;
-    clip-path: polygon(0% 1%, 90% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 60%);
-    background-color: var(--background);
-    z-index: 1;
+    margin-left: 2.5%;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 40%, 100% 100%, 90% 100%, 10% 100%, 0% 60%, 0 0);
 }
 
 .eventBoard {
@@ -41,8 +28,9 @@
     margin-top: 6rem;
     gap: 2rem;
     transition: all 0.3s;
-    height: 80%;
+    height: clamp(300px, 80vh, 600px);
     white-space: nowrap;
     padding-right: 2rem;
-    margin-left: 2.5%;
+    margin-left: 10%;
+    width: 100vw;
 }

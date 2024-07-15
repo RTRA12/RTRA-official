@@ -13,6 +13,14 @@
     --accent2: #f38ba8;
     --accent3: #cba6f7;
     font-family: 'Monospace', sans-serif;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
 
 body {
