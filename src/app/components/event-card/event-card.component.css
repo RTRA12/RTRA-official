@@ -6,8 +6,16 @@
     aspect-ratio: 0.8;
     gap: 1rem;
     position: relative;
+    transition: 0.2s all;
+    overflow: hidden;
 }
-
+ *{
+    transition: 0.3s all;
+ }
+:host:hover 
+.eventImage{
+    scale: 1.1;
+}
 .eventImage {
     height: 100%;
     aspect-ratio: 0.8;
