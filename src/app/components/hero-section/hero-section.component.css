@@ -1,30 +1,28 @@
-:host {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    /* background-color: var(--primary); */
-    padding: 2rem;
-}
 
 .heroContainer {
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap-reverse;
     align-items: center;
-    flex-direction: column;
-    width: 50%;
-    height: 50%;
+    justify-content: space-around;
+    gap: 2rem;
     padding: 1rem;
-    gap: 1rem;
-    color: var(--text);
 }
 
-.heroTitle {
+.hero-text-container,.hero-image{
+    width: 35rem;
+    
+}
+.hero-image img{
+    width: 100%;
+
+}  
+ .heroTitle {
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
 }
+
 
 .heroTitle .highlight {
     background: linear-gradient(90deg, var(--accent2), var(--accent3));
@@ -39,7 +37,6 @@
     background-size: 500% auto;
     animation: gradientAnimation 5s ease-in-out infinite alternate;
 }
-
 .simpleHighlight {
     background: linear-gradient(127deg, var(--accent), var(--accent2));
     background-clip: text;
@@ -97,36 +94,4 @@
 
 .heroButton:active {
     transform: scale(0.95);
-}
-
-.illustration {
-    width: 50%;
-    height: 50%;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    margin: 5rem;
-    margin-top: 10rem;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-}
-
-
-
-
-
-/* new Code */
-
-.hero-video{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
 }
