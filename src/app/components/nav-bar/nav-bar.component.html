@@ -1,14 +1,16 @@
-<a routerLink="/" class="logo">
-    <img src="/suse.png" alt="logo" class="logoImage" />
-    <h1 class="logoText">RADR</h1>
-</a>
+<header>
+    <a routerLink="/" class="logo">
+        <img src="/suse.png" alt="logo" class="logoImage" />
+    </a>
 
 <nav class="navBar">
-    <a routerLink="/about" class="navLink">About Us</a>
-    <a routerLink="/memories" class="navLink">Memories</a>
-    <a routerLink="/events" class="navLink">Events</a>
-    <a routerLink="/contact" class="navLink">Contact Us</a>
-    <a routerLink="/auth" class="navLink profile">
-        <img src="/Talk.svg" alt="profile picture" class="profileImage" />
-    </a>
+    <a routerLink="/about" class="navLink"><i class="fa-solid fa-users"></i></a>
+    <a routerLink="/memories" class="navLink"><i class="fa-solid fa-memory"></i></a>
+    <a routerLink="/events" class="navLink"><i class="fa-solid fa-calendar-days"></i></a>
+    <a routerLink="/contact" class="navLink"><i class="fa-solid fa-headset"></i></a> 
 </nav>
+<a routerLink="/auth" class="navLink profile">
+    <img src="/Talk.svg" alt="profile picture" class="profileImage" />
+</a>
+
+</header>
