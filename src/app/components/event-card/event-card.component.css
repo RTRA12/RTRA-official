@@ -8,6 +8,7 @@
     position: relative;
     transition: 0.2s all;
     overflow: hidden;
+    margin-bottom: 10vh;
 }
  *{
     transition: 0.3s all;
