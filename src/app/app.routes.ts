@@ -5,6 +5,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { MemoriesComponent } from './pages/memories/memories.component';
 import { EventsComponent } from './pages/events/events.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ErrorPageComponent } from './pages/error-page/error-page.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -12,5 +13,6 @@ export const routes: Routes = [
     {path: 'memories', component: MemoriesComponent},
     {path: 'events', component: EventsComponent},
     {path: 'contact', component: ContactComponent},
-    {path: 'about', component: AboutComponent}
+    {path: 'about', component: AboutComponent},
+    {path: '**', component: ErrorPageComponent}
 ];
