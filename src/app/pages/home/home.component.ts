@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { EventBoardComponent } from '../../components/event-board/event-board.component';
 import { HeroSectionComponent } from '../../components/hero-section/hero-section.component';
+import { SpinnerComponent } from '../../components/spinner/spinner.component';
 
 @Component({
   selector: 'app-home',
