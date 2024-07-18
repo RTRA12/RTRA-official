@@ -8,20 +8,22 @@ interface CustomEvent {
     location: string;
     tag: string;
     timings: string;
-};
+}
 
 @Component({
-  selector: 'app-event-board',
-  standalone: true,
-  imports: [EventCardComponent],
-  templateUrl: './event-board.component.html',
-  styleUrl: './event-board.component.css'
+    selector: 'app-event-board',
+    standalone: true,
+    imports: [EventCardComponent],
+    templateUrl: './event-board.component.html',
+    styleUrl: './event-board.component.css',
 })
 export class EventBoardComponent {
     constructor(private document: ElementRef) {}
     @Input() events!: CustomEvent[];
     @Input() category!: string;
     ngOnInit() {
-        this.document.nativeElement.querySelector('.eventBoard').style.width = `calc(${this.events.length * 500 + 'px'} + 3rem)`;
+        this.document.nativeElement.querySelector(
+            '.eventBoard'
+        ).style.width = `calc(${this.events.length * 500 + 'px'} + 3rem)`;
     }
 }

@@ -1,41 +1,20 @@
-
-.heroContainer {
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    align-items: center;
-    justify-content: space-around;
-    gap: 2rem;
-    padding: 1rem;
+.heroSection {
+    background-color: var(--primary);
 }
 
-.hero-text-container,.hero-image{
-    width: 35rem;
-    
-}
-.hero-image img{
-    width: 100%;
-
-}  
  .heroTitle {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
+    color: var(--text);
 }
-
 
 .heroTitle .highlight {
     background: linear-gradient(90deg, var(--accent2), var(--accent3));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-weight: 700;
-    font-size: 2.5rem;
     text-align: center;
-    display: inline;
     transition: all 1s;
-    background-size: 500% auto;
-    animation: gradientAnimation 5s ease-in-out infinite alternate;
+    background-size: 200% auto;
+    animation: gradientAnimation 3s ease-in-out infinite alternate;
 }
 .simpleHighlight {
     background: linear-gradient(127deg, var(--accent), var(--accent2));
@@ -51,47 +30,50 @@
     animation: gradientAnimation 5s ease-in-out infinite alternate;
 }
 
-.simpleHighlight:last-of-type {
-    background: linear-gradient(160deg, var(--accent2), var(--accent));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: 700;
-    font-size: 2.5rem;
-    text-align: center;
-    display: inline;
-    transition: all 1s;
-    background-size: 500% auto;
-    animation: gradientAnimation 5s ease-in-out infinite alternate;
-}
 
 .heroDescription {
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-align: center;
+    color: var(--subtext);
+}
+
+form {
+    background-color: var(--surface);
+}
+
+.emailLabel {
+    color: var(--accent);
+}
+
+#emailAddress {
+    background-color: var(--secondary);
+    outline: none;
+    border: 2px solid var(--accent);
+    color: var(--text);
+}
+
+#emailAddress::placeholder {
     color: var(--subtext);
 }
 
 .heroButton {
-    width: 50%;
-    height: 2.5rem;
-    padding: 0.5rem;
     border: none;
-    border-radius: 0.5rem;
+    outline: none;
     background: linear-gradient(127deg, var(--accent), var(--accent2));
     background-size: 200% auto;
     color: var(--primary);
     cursor: pointer;
     transition: all 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    margin-top: 5rem;
-    margin-bottom: 0.5rem;
-    animation: gradientAnimation 5s ease-in-out infinite alternate;
+    animation: gradientAnimation 3s ease-in-out infinite alternate;
 }
 
 .heroButton:active {
     transform: scale(0.95);
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
 }

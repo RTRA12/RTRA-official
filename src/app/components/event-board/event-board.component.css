@@ -20,7 +20,16 @@
     padding: 0.5rem 2rem;
     position: absolute;
     margin-left: 2.5%;
-    clip-path: polygon(10% 0%, 90% 0%, 100% 40%, 100% 100%, 90% 100%, 10% 100%, 0% 60%, 0 0);
+    clip-path: polygon(
+        10% 0%,
+        90% 0%,
+        100% 40%,
+        100% 100%,
+        90% 100%,
+        10% 100%,
+        0% 60%,
+        0 0
+    );
 }
 
 .eventBoard {

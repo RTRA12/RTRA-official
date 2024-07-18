@@ -7,11 +7,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    font-family: 'Monospace', sans-serif;
+
+    font-family: "Monospace", sans-serif;
     scrollbar-width: none;
 }
-:root{
+body {
     --background: #11111b;
     --surface: #181825;
     --primary: #1e1e2e;
@@ -21,6 +21,19 @@
     --accent: #b4befe;
     --accent2: #f38ba8;
     --accent3: #cba6f7;
+}
+
+.light {
+    --background: #dce0e8;
+    --surface: #e6e9ef;
+    --primary: #eff1f5;
+    --secondary: #ccd0da;
+    --text: #4c4f69;
+    --subtext: #6c6f85;
+    --accent: #7287fd;
+    --accent2: #e64553;
+    --accent3: #8839ef;
+
 }
 
 ::-webkit-scrollbar {
