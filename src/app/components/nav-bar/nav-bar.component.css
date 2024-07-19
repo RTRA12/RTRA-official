@@ -16,10 +16,12 @@ a{
     transition: all 0.3s;
 }
 
-i {
+#theme-changer {
     color: var(--text);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.3s;
+    cursor: pointer;
 }
+

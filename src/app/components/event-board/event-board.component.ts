@@ -2,6 +2,7 @@ import { Component, ElementRef, Input } from '@angular/core';
 import { EventCardComponent } from '../event-card/event-card.component';
 
 interface CustomEvent {
+    id:string
     title: string;
     description: string;
     date: string;

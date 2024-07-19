@@ -1,7 +1,6 @@
 <img src="/{{event.tag}}.svg" alt="Illustration" class="eventImage">
 <div class="eventDetails">
     <div class="eventTop">
-        <p class="eventTag">{{event.tag}}</p>
         <p class="eventDate">{{event.date}}</p>
     </div>
     <h1 class="eventTitle">{{event.title}}</h1>
@@ -10,5 +9,8 @@
         <p class="eventLocation">{{event.location}}</p>
         <p class="eventTimings">{{event.timings}}</p>
     </div>
-    <button class="eventButton">More Info</button>
+    <a [routerLink]="'event-detail/' + event.id">
+        <button class="eventButton">More Info</button>
+    </a>
+     
 </div>

@@ -8,6 +8,7 @@
     position: relative;
     transition: 0.2s all;
     overflow: hidden;
+    border-radius: 10px;
     margin-bottom: 10vh;
 }
 
@@ -57,7 +58,7 @@
     border: 2px solid var(--background);
     transition: all 0.3s;
 }
-
+/* 
 .eventTag {
     font-size: 1.3rem;
     font-weight: bold;
@@ -66,7 +67,7 @@
     padding: 0.5rem;
     background-color: var(--accent2);
     width: fit-content;
-}
+} */
 
 .eventTitle {
     font-size: 3rem;
