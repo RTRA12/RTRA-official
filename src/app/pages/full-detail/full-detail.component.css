@@ -1,0 +1,43 @@
+.section {
+    background-color: var(--primary);
+}
+
+.heroSection {
+    background-color: var(--background);
+    padding-top: 2%;
+}
+
+.title {
+    color: var(--text);
+}
+
+.description {
+    color: var(--subtext);
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.accent2 {
+    color: var(--accent2);
+}
+
+.button {
+    background-color: var(--surface);
+    color: var(--accent);
+    border: 2px solid var(--accent);
+}
+
+.button:hover {
+    background-color: var(--accent);
+    color: var(--surface);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.line {
+    border-top: 1px solid var(--accent);
+}

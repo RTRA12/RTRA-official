@@ -35,17 +35,23 @@ export class NavBarComponent {
     }
 
     ngOnInit() {
-        let themeIcon: HTMLElement = this.document.nativeElement.querySelector('#theme-changer');
-        themeIcon.addEventListener('click', () => {
-            this.changeTheme();
-            if(this.theme === 'dark') {
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
-            } else {
-                themeIcon.classList.remove('fa-sun');
-                themeIcon.classList.add('fa-moon');
-            }
-        });
+        let themeIcons: HTMLElement[] = this.document.nativeElement.querySelectorAll('.themeChanger');
+        for(let j = 0; j < themeIcons.length; j++) {
+            themeIcons[j].addEventListener('click', () => {
+                if(this.theme === 'dark') {
+                    for(let i = 0; i < themeIcons.length; i++) {
+                        themeIcons[i].classList.remove('fa-sun');
+                        themeIcons[i].classList.add('fa-moon');
+                    }
+                } else {
+                    for(let i = 0; i < themeIcons.length; i++) {
+                        themeIcons[i].classList.remove('fa-moon');
+                        themeIcons[i].classList.add('fa-sun');
+                    }
+                }
+                this.changeTheme();
+            });
+        }
     }
 }
 

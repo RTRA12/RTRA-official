@@ -1,0 +1,49 @@
+.heroText {
+    color: #cdd6f4;
+}
+
+.highlight {
+    color: var(--accent);
+}
+
+img {
+    border-radius: 20px;
+}
+
+.heroDesc {
+    color: #a6adc8;
+}
+
+.section {
+    background-color: var(--primary);
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.line {
+    border-bottom: 1px solid var(--accent);
+}
+
+.socials {
+    color: var(--accent);
+    background-color: var(--secondary);
+}
+
+.socials:hover {
+    color: var(--secondary);
+    background-color: var(--accent)
+}
+
+.accent2 {
+    color: var(--accent2);
+}
+
+.title {
+    color: var(--text);
+}
+
+.description {
+    color: var(--subtext);
+}

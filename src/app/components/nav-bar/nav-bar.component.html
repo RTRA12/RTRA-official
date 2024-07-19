@@ -1,6 +1,6 @@
 <header class="bg-white w-screen">
     <nav
-        class="flex max-w-7xl items-center justify-between p-3 lg:px-8"
+        class="flex max-w-8xl items-center justify-between p-3 lg:px-8"
         aria-label="Global"
     >
         <div class="flex lg:flex-1">
@@ -32,16 +32,13 @@
                 </svg>
             </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
+        <div class="hidden lg:flex lg:gap-x-12 midNav">
             <a *ngFor="let navigation of navigations" [routerLink]="navigation.link" class="text-sm font-semibold leading-6 text-gray-900"
                 >{{navigation.title}}</a
             >
         </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-x-12">
-            <a routerLink="/auth" class="text-sm font-semibold leading-6 text-gray-900"
-                >Log in <span aria-hidden="true" class="arrow">&rarr;</span></a
-            >
-            <i id="theme-changer" class="fa-solid fa-sun fa-xl"></i>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-x-12 endNav">
+            <i class="themeChanger fa-solid fa-sun fa-xl"></i>
         </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
@@ -54,7 +51,7 @@
         <!-- Background backdrop, show/hide based on slide-over state. -->
         <div class="fixed inset-0 z-10"></div>
         <div
-            class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+            class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 mobileNav"
         >
             <div class="flex items-center justify-between">
                 <a routerLink="#" class="-m-1.5 p-1.5">
@@ -88,17 +85,13 @@
                     <div class="space-y-2 py-6">
                         <a *ngFor="let navigation of navigations"
                            [routerLink]="navigation.link"
-                           class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                           class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900">
                            {{ navigation.title }}
                         </a>
                       </div>
-                      
+
                     <div class="py-6">
-                        <a
-                            routerLink="/auth"
-                            class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                            >Log in</a
-                        >
+                        <i class="themeChanger fa-solid fa-sun fa-xl"></i>
                     </div>
                 </div>
             </div>
