@@ -33,6 +33,7 @@
 }
 
 .eventBoard {
+
     display: flex;
     margin-top: 6rem;
     gap: 2rem;
@@ -41,4 +42,6 @@
     white-space: nowrap;
     margin-left: 10%;
     width: 100vw;
+    overflow: hidden;
+    overflow-y: auto;
 }
