@@ -8,12 +8,11 @@
     overflow-y: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    box-sizing: border-box;
 }
 
 .eventCategory {
-    font-size: 2rem;
     font-weight: 700;
-    /* background-color: var(--accent2); */
     background: linear-gradient(160deg, var(--accent) 0%, var(--accent2) 100%);
     color: var(--background);
     margin-bottom: 1.5rem;
@@ -30,18 +29,21 @@
         0% 60%,
         0 0
     );
+
+
 }
 
 .eventBoard {
-
     display: flex;
     margin-top: 6rem;
     gap: 2rem;
     transition: all 0.3s;
-    height: clamp(300px, 80vh, 600px);
+    height: clamp(300px, 80vh, 500px);
     white-space: nowrap;
     margin-left: 10%;
     width: 100vw;
     overflow: hidden;
     overflow-y: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
 }
