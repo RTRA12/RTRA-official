@@ -12,28 +12,27 @@
     flex: 0 0 auto;
     scroll-snap-align: center;
     transition: 0.3s all;
-  }
-  .tile-container:hover{
+}
+.tile-container:hover {
     scale: 1.03;
-
-  }
-  .tile-image {
+}
+.tile-image {
     width: 100%;
     height: auto;
     border-radius: 8px;
     overflow: hidden;
-  }
+}
 
-  .tile-image img {
+.tile-image img {
     width: 100%;
     height: auto;
-  }
+}
 
-  .tile-content {
+.tile-content {
     padding: 5px;
-  }
+}
 
-  .tile-content h3 {
+.tile-content h3 {
     width: 100%;
     height: 2rem;
     /* background-color: red; */
@@ -42,57 +41,61 @@
     font-weight: bold;
     text-wrap: wrap;
     overflow: hidden;
+}
 
-  }
-
-  .tile-details {
+.tile-details {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
-  }
+}
 
-  .tile-icon {
+.tile-icon {
     margin-right: 8px;
-  }
+}
 
-  .tile-info {
+.tile-info {
     color: var(--accent2);
     font-size: 0.9rem;
-  }
-  .tile-location{
+}
+
+.tile-location {
     color: var(--accent);
     font-size: 0.9rem;
     width: 90%;
     padding: 0.1rem;
     box-sizing: border-box;
     overflow: hidden;
-  }
+}
 
-  .tile-buttons {
+.tile-buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
-  .tile-button {
+.tile-button {
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
     background-color: #f0f0f0;
-    color: var(--secondary);
-    transition:  0.3s ;
-  }
-  .spacial-btn{
+    color: var(--surface);
+    transition: 0.3s;
+}
+
+#btn {
+    color: #313244;
+}
+
+.spacial-btn {
     background-color: var(--accent3);
-  }
+}
 
-  .tile-button:hover {
-   scale: 1.1;
-  }
+.tile-button:hover {
+    scale: 1.1;
+}
 
-  svg{
+svg {
     color: var(--text);
-  }
-
+}
