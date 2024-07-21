@@ -3,7 +3,7 @@ import { EventCardComponent } from '../event-card/event-card.component';
 import { RouterLink } from '@angular/router';
 
 interface CustomEvent {
-    id:string
+    id: string;
     title: string;
     description: string;
     date: string;
@@ -15,7 +15,7 @@ interface CustomEvent {
 @Component({
     selector: 'app-event-board',
     standalone: true,
-    imports: [EventCardComponent,RouterLink],
+    imports: [EventCardComponent, RouterLink],
     templateUrl: './event-board.component.html',
     styleUrl: './event-board.component.css',
 })
@@ -24,8 +24,10 @@ export class EventBoardComponent {
     @Input() events!: CustomEvent[];
     @Input() category!: string;
     ngOnInit() {
-        this.document.nativeElement.querySelector(
-            '.eventBoard'
-        ).style.width = `calc(${this.events.length * 500 + 'px'} + 3rem)`;
+        setTimeout(() => {
+            this.document.nativeElement.querySelector(
+                '.eventBoard'
+            ).style.width = `calc(${(this.events.length+1) * 500 + 'px'})`;
+        }, 1000);
     }
 }
