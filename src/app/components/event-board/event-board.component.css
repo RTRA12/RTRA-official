@@ -45,4 +45,39 @@
     overflow-y: auto;
     scroll-snap-type:y mandatory;
     scroll-behavior: smooth;
+    padding: 1rem;
+}
+
+
+
+.tile-container{
+
+    width: 20rem;
+    border: 1px solid var(--accent3);
+    background-color: var(--background);
+    border-radius: 8px;
+    padding: 16px;
+    height: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+}
+.Event-page-ancor{
+    background-color: var(--secondary);
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.Event-page-ancor:hover{
+    scale: 1.1;
+}
+.icon{
+    font-size: 2rem;
+    color: var(--accent3);
+    transition: 0.3s all;
+
+}
+.Event-page-ancor:hover .icon{
+    position: relative;
+    left: 10px;
 }

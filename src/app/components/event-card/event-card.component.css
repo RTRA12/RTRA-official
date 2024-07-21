@@ -11,8 +11,12 @@
     overflow: hidden;
     flex: 0 0 auto;
     scroll-snap-align: center;
+    transition: 0.3s all;
   }
+  .tile-container:hover{
+    scale: 1.03;
 
+  }
   .tile-image {
     width: 100%;
     height: auto;

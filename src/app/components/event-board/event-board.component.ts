@@ -1,5 +1,6 @@
 import { Component, ElementRef, Input } from '@angular/core';
 import { EventCardComponent } from '../event-card/event-card.component';
+import { RouterLink } from '@angular/router';
 
 interface CustomEvent {
     id:string
@@ -14,7 +15,7 @@ interface CustomEvent {
 @Component({
     selector: 'app-event-board',
     standalone: true,
-    imports: [EventCardComponent],
+    imports: [EventCardComponent,RouterLink],
     templateUrl: './event-board.component.html',
     styleUrl: './event-board.component.css',
 })
