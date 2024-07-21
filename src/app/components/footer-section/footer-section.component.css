@@ -1,12 +1,26 @@
-.text{
+.text {
     color: var(--text);
-
 }
-.subtext{
+.subtext {
     color: var(--subtext);
-
 }
-.background{
+.background {
     background-color: var(--background);
+}
 
+.primary {
+    background-color: var(--primary);
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.background:hover {
+    background-color: var(--accent);
+    color: var(--background);
+}
+
+a:hover {
+    color: var(--accent);
 }
