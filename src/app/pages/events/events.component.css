@@ -1,0 +1,27 @@
+.Events-container{
+
+    background-color: var(--background);
+
+}
+.heading{
+    color: var(--subtext);
+}
+.onlyText{
+    color: var(--text);
+}
+.normal-btn{
+    background: var(--primary);
+    color: var(--subtext);
+    transition: 0.3s all;
+}
+
+.normal-btn:hover{
+    background-color: var(--secondary);
+    color: var(--accent2);
+}
+.focused{
+    background-color: var(--secondary);
+    color: var(--accent2);
+}
+
+

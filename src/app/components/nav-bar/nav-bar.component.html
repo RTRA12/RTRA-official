@@ -16,7 +16,7 @@
             >
                 <span class="sr-only">Open main menu</span>
                 <svg
-                    (click)="isManueOpened = !isManueOpened"
+                    (click)="isManueOpened = true"
                     class="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -32,8 +32,8 @@
                 </svg>
             </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12 midNav">
-            <a *ngFor="let navigation of navigations" [routerLink]="navigation.link" class="text-sm font-semibold leading-6 text-gray-900"
+        <div class="hidden lg:flex lg:gap-x-12 midNav" >
+            <a  *ngFor="let navigation of navigations" [routerLink]="navigation.link" class="text-sm font-semibold leading-6 text-gray-900"
                 >{{navigation.title}}</a
             >
         </div>
@@ -64,7 +64,7 @@
                 >
                     <span class="sr-only">Close menu</span>
                     <svg
-                        (click)="isManueOpened = !isManueOpened"
+                        (click)="isManueOpened = false"
                         class="h-6 w-6"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -83,7 +83,7 @@
             <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10">
                     <div class="space-y-2 py-6">
-                        <a *ngFor="let navigation of navigations"
+                        <a (click)="isManueOpened = false" *ngFor="let navigation of navigations"
                            [routerLink]="navigation.link"
                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900">
                            {{ navigation.title }}
