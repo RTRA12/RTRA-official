@@ -8,7 +8,6 @@ interface CustomEvent {
     description: string;
     date: string;
     location: string;
-    tag: string;
     timings: string;
 }
 
