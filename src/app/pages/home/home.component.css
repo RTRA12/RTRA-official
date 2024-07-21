@@ -2,3 +2,11 @@
     display: block;
     width: 100%;
 }
+
+.QnA-cards{
+    background-color: var(--background);
+    color: var(--text);
+}
+.subText{
+    color: var(--accent);
+}

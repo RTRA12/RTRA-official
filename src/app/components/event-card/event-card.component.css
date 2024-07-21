@@ -1,14 +1,16 @@
 .tile-container {
     display: flex;
     flex-direction: column;
-    width: 20rem; /* Adjust as needed */
-    border: 1px solid #ccc;
+    width: 20rem;
+    border: 1px solid var(--accent3);
     background-color: var(--background);
     border-radius: 8px;
     padding: 16px;
     height: 80%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
   }
 
   .tile-image {
