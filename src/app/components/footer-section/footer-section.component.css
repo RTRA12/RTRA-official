@@ -1,104 +1,12 @@
-:host {
-    display: flex;
-    width: 100vw;
-    height: fit-content;
-    padding: 2rem;
-    margin-top: auto;
-    flex-direction: column;
-}
-
-.footerTitle {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--accent);
-    margin-bottom: 1rem;
-    margin-left: 5%;
-}
-
-.container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    min-width: 100%;
-}
-
-footer {
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    gap: 1rem;
-    background-color: var(--primary);
-    padding: 3rem;
-    border-radius: 2rem;
-}
-
-.footerContainer {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.title {
-    font-size: 2rem;
-    font-weight: 700;
+.text{
     color: var(--text);
-    margin-bottom: 1rem;
-}
 
-.description {
-    font-size: 1.2rem;
+}
+.subtext{
     color: var(--subtext);
-    margin-bottom: 1rem;
-    width: 80%;
-}
 
-.button {
-    width: 50%;
-    height: 2.5rem;
-    padding: 0.5rem;
-    border: 2px solid var(--accent);
-    border-radius: 0.5rem;
-    background-color: var(--surface);
-    color: var(--accent);
-    cursor: pointer;
-    transition: all 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
-    margin-top: auto;
-    margin-bottom: 0.5rem;
 }
+.background{
+    background-color: var(--background);
 
-.button:hover {
-    background-color: var(--accent);
-    color: var(--surface);
-}
-
-.button:active {
-    transform: scale(0.95);
-}
-
-.socials {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.socialLink {
-    font-size: 1.5rem;
-    color: var(--accent);
-    text-decoration: none;
-    height: fit-content;
-    width: 3rem;
-}
-
-.socialImage {
-    max-width: 100%;
-    height: auto;
 }
