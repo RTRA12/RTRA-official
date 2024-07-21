@@ -8,6 +8,7 @@ interface CustomEvent {
     date: string;
     location: string;
     timings: string;
+    category: string;
 }
 
 @Component({
