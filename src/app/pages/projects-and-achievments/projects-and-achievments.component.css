@@ -1,4 +1,4 @@
-.projects-container{
+.Events-container{
 
     background-color: var(--background);
 
@@ -25,3 +25,18 @@
 }
 
 
+.hero-container{
+    background: url(/memories/project-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+}
+.text-container{
+
+    background-color: #181a1d9c;
+    padding: 1rem;
+
+
+}

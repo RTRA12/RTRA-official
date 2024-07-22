@@ -1,0 +1,42 @@
+<!-- Projects and Achievements section -->
+<section class="projects-container">
+    <div class="grid place-items-center max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28 hero-container" >
+        <div class="text-container mr-auto place-self-center lg:col-span-7">
+            <h1
+                class="heading max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
+                Our Projects <br> and Achievements
+            </h1>
+
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl onlyText">
+                Here you can find all our achievements and Projects
+            </p>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- Projects and Achievements tabs -->
+<section class="w-screen md:p-10 p-1">
+    <h1 class="heading max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
+        Projects & Achievements
+    </h1>
+    <nav class="w-full h-10 flex justify-center items-center gap-10 my-5">
+        <button (click)="activeTab = 'achievements'" type="button"
+        [ngClass]="{ 'focused': activeTab === 'achievements', 'normal-btn': true, 'focus:outline-none': true, 'focus:ring-4': true, 'font-medium': true, 'rounded-full': true, 'text-sm': true, 'px-5': true, 'py-2.5': true }">Achievements</button>
+        <button (click)="activeTab = 'projects'" type="button"
+            [ngClass]="{ 'focused': activeTab === 'projects', 'normal-btn': true, 'focus:outline-none': true, 'focus:ring-4': true, 'font-medium': true, 'rounded-full': true, 'text-sm': true, 'px-5': true, 'py-2.5': true }">Projects</button>
+    </nav>
+    <div class="w-screen flex justify-center items-center gap-4 sm:flex-col md:flex-row flex-wrap lg:p-10">
+        <!-- for projects -->
+        <div *ngIf="activeTab === 'projects'">
+
+            <p>Show projects here</p>
+        </div>
+
+        <div *ngIf="activeTab === 'achievements'">
+
+            <p>Show achievements here</p>
+        </div>
+    </div>
+</section>
